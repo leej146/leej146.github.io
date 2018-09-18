@@ -6,7 +6,7 @@ html {
 
 h1 {
   color: pink;
-  font-family: "Arial black",
+  font-family: "Courier",
   font-weight: 200;
   font-size: 72;
   text-align: center;
@@ -14,9 +14,19 @@ h1 {
 
 }
 
+h2 {
+  color: black;
+  font-family: "Courier",
+  font-weight: 200;
+  font-size: 72;
+  text-align: left;
+
+
+}
+
 h3 {
   color: grey;
-  font-family: "Arial black",
+  font-family: "Courier",
   font-weight: 200;
   font-size: 72;
   text-align: center;
@@ -26,11 +36,11 @@ h3 {
 
 h4 {
   color: black;
-  font-family: "Arial black",
+  font-family: "Courier",
   font-weight: 200;
   font-size: 24;
   text-align: left;
-
+  font-style: bold;
 
 }
 
