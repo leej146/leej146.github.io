@@ -5,7 +5,10 @@ h1 {
   font-style: bold;
 
 }
-p{color: black ;}
+p{color: black ;
+font-family: courier;
+  font-size: 24px;
+}
 
 #black-text{
   color: purple;
