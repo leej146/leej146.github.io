@@ -26,6 +26,10 @@ font-family: courier;
 
   }
 
+a {
+    text-decoration: none;
+}
+
 }
 
 .done {text-decoration: overline;}
