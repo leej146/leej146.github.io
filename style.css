@@ -1,11 +1,11 @@
 h1 {
-  color: white;
-  background-color: grey;
-  font-weight: 200;
-  font-style: oblique;
+  color: Olive;
+  font-family: courier;
+  font-weight: 300;
+  font-style: bold;
 
 }
-p{color: green ;}
+p{color: black ;}
 
 #black-text{
   color: purple;
