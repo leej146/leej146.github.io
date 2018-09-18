@@ -1,0 +1,36 @@
+html {
+  font-size: 14px;
+  color: grey;
+  text-align: left;
+}
+
+h1 {
+  color: pink;
+  font-family: "Arial black",
+  font-weight: 200;
+  font-size: 72;
+  text-align: center;
+  text-decoration-style: dotted;
+
+
+}
+
+h4 {
+  color: black;
+  font-family: "Arial black",
+  font-weight: 200;
+  font-size: 24;
+  text-align: left;
+
+
+}
+
+p {
+  color: olive;
+  font-family: "Arial black",
+  font-weight: 200;
+  font-size: 20;
+  text-align: left;
+
+
+}
