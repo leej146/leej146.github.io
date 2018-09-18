@@ -10,7 +10,16 @@ h1 {
   font-weight: 200;
   font-size: 72;
   text-align: center;
-  text-decoration-style: dotted;
+
+
+}
+
+h3 {
+  color: grey;
+  font-family: "Arial black",
+  font-weight: 200;
+  font-size: 72;
+  text-align: center;
 
 
 }
