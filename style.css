@@ -35,3 +35,9 @@ a {
 .done {text-decoration: overline;}
 
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
