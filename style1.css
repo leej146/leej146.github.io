@@ -1,0 +1,89 @@
+#flex-container{
+  display: flex;
+  background-color: red;
+  justify-content:space;
+  border: 5px solid black;
+  border-radius: 10px;
+  height: 1500px;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  margin left: 5px auto;
+
+}
+
+html, body {
+  margin: 3px auto;
+  padding: 1px;
+  font-family: Ace Sans;
+  font-size: 92px;
+
+}
+
+.countdown{
+  width: 200px;
+  height:500px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+
+
+h1{
+  font-size: 200px;
+  font-family: ace Sans;
+  border-color: red;
+  border-radius: 5px;
+  text-decoration: none;
+
+}
+
+#elem1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner_element {
+    text-align: center;
+    flex: 1 100%;
+}
+
+h2{
+  font-size: 80px;
+  font-family: ace Sans;
+  border-color: red;
+  color: white;
+  border-radius: 5px;
+  margin: 2px auto;
+  padding: 1px;
+}
+
+h3{
+  font-size: 60px;
+  font-family: ace Sans;
+  border-color: red;
+  color: white;
+  border-radius: 5px;
+  margin: 2px auto;
+  padding: 1px;
+
+}
+
+h4{
+  font-size: 40px;
+  font-family: ace Sans;
+  border-color: red;
+  color: white;
+  border-radius: 5px;
+  margin: 2px auto;
+  padding: 1px;
+
+}
+
+.outside {
+  background-color: red;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:2px auto;
+}
