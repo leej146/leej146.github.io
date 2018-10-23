@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+    <title>jQuery Poem</title>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style3.css">
+
+    </head>
+
+
+    <body>
+    <div id= "poem"></div>
+
+    <button id= "button">How are you? Click to know how I feel...</button>
+    <p id="poem" hidden>This is hard and it frustrates me...</p>
+
+
+
+<h3> Tell me how you feel: <input  type="text" name="now" ><br> <h3>
+
+  <p>
+  <button onclick="myMove()">This my level of understanding of Javascript as I make my way from class to home...</button>
+  </p>
+
+  <div id ="container">
+  <div id ="animate"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+<script>
+
+
+$(document).ready(function(){
+  $("button").click(function(){
+      $("p").show(500);
+
+    $(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+
+        function myMove() {
+          var elem = document.getElementById("animate");
+          var pos = 0;
+          var id = setInterval(frame, 5);
+          function frame() {
+            if (pos == 350) {
+              clearInterval(id);
+            } else {
+              pos++;
+              elem.style.top = pos + 'px';
+              elem.style.left = pos + 'px';
+            }
+          }
+        }
+
+
+
+
+});
+});
+
+  });
+});
+
+
+  </script>
