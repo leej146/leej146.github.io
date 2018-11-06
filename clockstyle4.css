@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+}
+
+.clock {
+	display: flex;
+	position: relative;
+	align-items: center;
+	width: 640px;
+	height: 480px;
+	//padding: 16px;
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/10293/IMG_426668.jpg);
+	background-size: cover;
+
+	>section {
+		width: 320px;
+		padding: 20px;
+	}
+
+}
+
+.digital-clock, .date {
+	//line-height: 0;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 3px 3px #9ac4dc;
+}
+
+.analog-clock {
+  border-radius: 100%;
+	border: 4px solid #9ac4dc;
+  background: #fff url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg) no-repeat center;
+  background-size: 90%;
+  width: 220px;
+	height: 220px;
+	margin: 0 auto;
+  position: relative;
+
+	&:after {
+		background: #000;
+		border-radius: 50%;
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 10px;
+		height: 10px;
+		z-index: 10;
+	}
+
+	.minutes-container, .hours-container, .seconds-container {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.hours {
+		background: #9ac4dc;
+		height: 20%;
+		left: 48.75%;
+		position: absolute;
+		top: 30%;
+		transform-origin: 50% 100%;
+		width: 2.5%;
+		box-shadow: 2px 2px 2px #888888;
+	}
+
+	.minutes {
+		background: #9ac4dc;
+		height: 38%;
+		left: 49%;
+		position: absolute;
+		top: 12%;
+		transform-origin: 50% 100%;
+		width: 2%;
+		box-shadow: 2px 2px 2px #888888;
+	}
+
+	.seconds {
+		//display: none;
+		background: #9ac4dc;
+		height: 45%;
+		left: 49.5%;
+		position: absolute;
+		top: 14%;
+		transform-origin: 50% 80%;
+		width: 1%;
+		z-index: 8;
+		box-shadow: 2px 2px 3px #888888;
+	}
+}
+
+.night-time {
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/10293/4464942-night-sky-wallpapers.jpg);
+	background-size: 768px 480px;
+
+	.digital-clock, .date {
+		text-shadow: 3px 3px #999;
+	}
+
+	.analog-clock {
+		border-color: #999;
+
+		.hours, .minutes, .seconds {
+			background-color: #999;
+		}
+	}
+}
