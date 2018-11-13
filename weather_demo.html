@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>The Weather</title>
+  <title>Get Weather Demo</title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <style>
 
@@ -11,7 +11,7 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      height: 120vh;
+      height: 100vh;
       box-sizing: border-box;
       margin: 0px;
       padding: 2rem;
@@ -20,17 +20,17 @@
     .circle{
       width: 10px;
       height: 10px;
-      background-color: lightblue;
+      background-color: blue;
       border-radius: 1000px;
-      transition: all 2s ease;
+      transition: all 1s ease;
     }
 
     .scale{
-      transform: scale(1.8);
+      transform: scale(1.2);
     }
 
     .text{
-      font-family: courier;
+      font-family: sans-serif;
       font-weight: 200;
       font-size: 2rem;
       width: 100vw;
@@ -48,13 +48,6 @@
 
     #wind{
       background-color: lightblue;
-
-    #cloudinessText{
-        color: lightblue;
-      }
-
-      #cloudiness{
-        background-color: grey;
     }
   </style>
 </head>
@@ -64,7 +57,6 @@
 <div id="circles">
   <div id="temp" class="circle"></div>
   <div id="wind" class="circle"></div>
-  <div id="cloudiness" class="circle"></div>
 </div>
 
 <div id="windText" class="text"></div>
@@ -80,21 +72,17 @@
     });
 
     var weatherText = $("#weather")
-    var temp, wind, cloudiness
+    var temp, wind
 
     function handleData(data){
       $("#tempText").html("the current temperature is " + data.main.temp + "°")
       $("#windText").html("the current wind speed is " + data.wind.speed + " mph")
-      $("#cloudinessText").html("the current cloudiness is " + data.main.cloudiness + "*")
 
       $("#temp").css("width", data.main.temp*6);
       $("#temp").css("height", data.main.temp*6);
 
       $("#wind").css("width", data.wind.speed*6);
       $("#wind").css("height", data.wind.speed*6);
-
-      $("#wind").css("width", data.main.cloudiness*6);
-      $("#wind").css("height", data.main.cloudiness*6);
     }
   })
 

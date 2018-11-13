@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Local Weather</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="weather.css">
+  </head>
+  <body>
+
+
+<!-- <div class="wrapper"> -->
+  <h1>Weather Forecast</h1>
+
+  <h2>
+     City <input type="text" id="city">
+
+      <button onclick="getWeather()">Get Weather</button>
+    </h2>
+
+    <div class="weatherResponse"> </div>
+
+    <div id="tempText">
+    </div>
+    <div id="speedText">
+    </div>
+    <div id="tempCircle">
+    </div>
+
+
+  <!-- <div class="sun"></div> -->
+  <div class = "polarbear">  </div>
+    <div id= polarbear>  </div>
+
+<img id="polarbear" src="polarbear.png" alt="sunflower.png" >
+
+
+
+</div>
+
+
+
+
+
+
+  <script>
+  $("document").ready(function(){
+         $.ajax({
+    url:('http://api.openweathermap.org/data/2.5/weather?q=New%20York&units=imperial&appid=7e08eaae91b3bebb05aca635a7a19519',
+       success: function(data) {
+         console.log(data);
+         handleData(data)
+       }
+     });
+     function handleData(data){
+       println(data);
+        console.log(data);
+        console.log(data.name);
+        console.log(data.main.temp);
+        let temp = data.main.temp;
+
+        $( "#city" ).click(function() {
+  $( "#polarbear" ).show( "slow", function() {
+  });
+
+
+        $("#speedText").html(data.main.speed)
+               $("#tempCircle").css("width", data.main.temp)
+                $("#tempCircle").css("height", data.main.temp)
+                if (temp < 32){
+                  $("#polarbear").html("<img src='polarbear.png'>")
+                } else{
+                  $("#snowflake").html("<img src='sunflower.jpg'>")
+                }
+             }
+
+
+
+function getWeather(){
+  $('.weatherResponse').html('');
+  var city = ('#city').val();
+  var apiCall = 'http://api.openweathermap.org/data/2.5/weather?q=New%20York&units=imperial&appid=7e08eaae91b3bebb05aca635a7a19519';
+
+  $.getJSON(apiCall, weatherCallback);
+
+  function weatherCallback(weatherdata){
+    var city = weatherData.name;
+    var country = weatherData.ys.country;
+    var description = weatherData.weather[0].description;
+    $('.weatherResponse').append("The weather in" + cityName + "" + country + "is currently" + description);
+
+  }
+
+}
+
+
+
+
+
+
+
+
+  // var weather;
+  // var api = 'http://api.openweathermap.org/data/2.5/weather?q=';
+  // var city = 'New York';
+  // car apiKey = '7e08eaae91b3bebb05aca635a7a19519';
+  // var units = '&units=imperial';
+  //
+  //
+  //
+  //   var button = select('#submit');
+  //   button.mousePressed(weatherAsk);
+  //   function weatherAsk(){
+  //     var url = api + city + apiKey + units;
+  //     loadJSON(url, handleData);
+  //   }
+  //   function handleData(data) {
+  //     weather = data;
+  //   }
+  //
+  // }
+
+
+
+    </script>
+
+    </body>
+    </html>
