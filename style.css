@@ -43,3 +43,9 @@ font-size: 20px;
 .done {text-decoration: underline;}
 
 }
+
+.pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
