@@ -2,20 +2,21 @@ h1 {
   color: white;
   background-color: grey;
   font-weight: 200;
-  font-style: oblique;
+  font-family: gill Sans;
+  color: white;
 
 }
 p{color: green ;}
 
 #black-text{
-  color: purple;
+  color: pink;
   font-weight: bold;}
 
 #bold-text{
-  color:red;
+  color:#f2f2f2;
   font-style: normal;
   font-size: 24px;
-  font-family: Impact;
+  font-family: Gill sans;
   text-align: center;
 
   #rounded-box{
