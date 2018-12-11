@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Kingdom</title>
+    <link rel="stylesheet" href="style6.css" type="text/css" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+
+
+<div class= "header">
+  <img src="images/ADtitle.png" class="safari">
+
+  <button class = "button" type="button"><span>EXPLORE</span></button>
+
+
+</div>
+<body>
+
+  <div class= "container">
+
+
+  <form action="/action_page.php"> </form>
+
+
+<link rel="stylesheet" type="text/css" media="all" href="https://dictionarybox.com/dic_box_v3.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://dictionarybox.com/dic_box.js"></script>
+<div id="pl-dbox"><a class="pl-dbox-title" href="javascript:void(0);dboxCursorLoc();"><span id="pl-dbox-title-text">Dictionary</span></a>
+<div id="pl-dbox-content"><div id="pl-dboxFlags"><ul><li><img src="https://dictionarybox.com/flags/English.png" alt="english" /></li>
+<li></li><li><h3>English Dictionary</h3></li></ul></div><div id="pl-dbox-ajax-content">
+<p class="info">Double click on any word on the page or type a word:</p><p><input type="text" name="pl-dbox-search-field" style="width:97%;" id="pl-dbox-search-field" onKeyPress="return dbxChkKy(event);" autocomplete=off /></p>
+<p id="pl-dbox-search-button"><input type="button" value=" Search! " OnClick="getdboxResults();"/></p></div><input id="pl-dbox-glossary" type="hidden" value="EnglishToEnglish"/>
+<div id="pl-dbox-credit">Powered by dictionarist.com</div></div></div>
+
+<div class="pic-section">
+  <ul class="pic-grid">
+    <li>
+      <div class="pic-box pic-img-1">
+        <img src="images/orca.jpg">
+        <div class="cover">
+          <h3>ORCA</h3>
+          <H4>ABOUT THE ORCA</H4>
+          <p>Orcas, or killer whales, are the largest of the
+            dolphins and one of the world's most powerful predators.
+            They feast on marine mammals such as seals, sea lions, and even
+            whales, employing teeth that can be four inches long. They are
+            known to grab seals right off the ice.
+            They also eat fish, squid, and seabirds.
+          </p>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="pic-box pic-img-2">
+        <img src="images/cheetah.jpg">
+          <div class="cover">
+          <h3>CHEETAH</h3>
+          <H4>ABOUT THE CHEETAH</H4>
+          <p>The cheetah is the world's fastest land mammal. With
+          acceleration that would leave most automobiles in the dust,
+          a cheetah can go from 0 to 60 miles an hour in only three
+          seconds. These big cats are quite nimble at high speed
+          and can make quick and sudden turns in pursuit of prey.
+        </p>
+      </div>
+    </div>
+    </li>
+
+    <li>
+      <div class="pic-box pic-img-3">
+        <img src="images/seahorse.jpeg">
+          <div class="cover">
+          <h3>SEAHORSE</h3>
+          <H4>ABOUT THE SEAHORSE</H4>
+          <p>Seahorses are truly unique, and not just because of their
+          unusual equine shape. Unlike most other fish, they are
+          monogamous and mate for life. Rarer still, they are among
+          the only animal species on Earth in which the male bears
+          the unborn young. </p>
+      </div>
+    </div>
+    </li>
+
+    <li>
+      <div class="pic-box pic-img-4">
+        <img src ="images/giraffe.jpg">
+          <div class="cover">
+          <h3>GIRAFFE</h3>
+         <h4>ABOUT THE GIRAFFE</h4>
+         <p>Giraffes are the world's tallest mammals,
+           thanks to their towering legs and long necks.
+           A giraffe's legs alone are taller than many humans—about
+           6 feet . These long legs allow giraffes to run as fast as
+           35 miles an hour over short distances. </p>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="pic-box pic-img-5">
+        <img src="images/butterfly.jpeg">
+          <div class="cover">
+          <h3>BUTTERFLY</h3>
+          <h4>ABOUT THE BUTTERFLY</h4>
+            Butterflies are beautiful, flying insects with large
+            scaly wings. Like all insects, they have six jointed legs,
+            3 body parts, a pair of antennae, compound eyes, and an
+            exoskeleton. The three body parts are the head, thorax
+            (the chest), and abdomen (the tail end).</p>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="pic-box pic-img-6">
+        <img src="images/sloth.jpg">
+          <div class="cover">
+          <h3>SLOTH</h3>
+          <h4>ABOUT THE SLOTH BEAR</h4>
+          Shaggy, dusty, and unkempt, the reclusive sloth bear makes
+          its home in the forests of South Asia. Emitting noisy grunts
+           and snorts, it wanders alone, usually at night, in search
+            of insects and fresh fruit.</p>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    console.log('it workded');
+    $(".button").click(function(){
+      // console.log("clicked")
+      $(".pic-section").fadeIn(2000);
+    })
+  });
+</script>
+</body>
+</html>
